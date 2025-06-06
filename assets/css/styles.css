@@ -1,0 +1,48 @@
+/*
+requirements for stying my project:
+Profile Picture: As a user, I want the profile picture to be displayed in a 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px so that it maintains a clean and modern design.
+Name Display: As a user, I want the name and surname to be displayed in bold, 22px Inter font (#000, left-aligned) with 16px bottom margin so that it stands out clearly.
+Bio Text: As a user, I want my bio to be displayed in a 16px, regular-weight Inter font (#4A4A4A, max 320 characters) with 24px line height and a max width of 520px so that it remains readable and visually balanced.
+Container Styling: As a user, I want the profile section to have a white background (#FFFFFF), 24px padding, and a border-radius of 12px with a subtle box shadow (#DADADA, 3px blur) so that it appears modern and professional.
+Mobile Responsive Stacking: As a user, I want the profile picture to resize to 96px by 96px, with the name in 18px font and bio in 14px font, stacking vertically on screens below 640px width so that it adapts properly to mobile layouts.
+
+Proficiency Bars: As a user, I want each skill proficiency bar to have a height of 6px, a corner radius of 3px, and a dark green fill (#396B5E) so that my skill levels are visually distinct while maintaining a sleek design.
+Proficiency Labels: As a user, I want the proficiency levels ("Beginner," "Intermediate," "Advanced*") to be displayed in bold, 14px Inter font (#000, left-aligned) with 12px spacing between each level so that they are easy to read and follow the design.
+Proficiency Section Layout: As a user, I want the proficiency section to have a white background (#FFFFFF), 20px padding, a border-radius of 12px, and a shadow (#DADADA, 2px blur) so that it looks modern and professional while maintaining consistent spacing.
+
+Skill Tags Design: As a user, I want each skill tag to be a light green pill shape (#ECF4F1) with 8px vertical padding, 14px horizontal padding, and 6px rounded corners so that they stand out as interactive elements while keeping a balanced look.
+Skill Text Styling: As a user, I want each skill tag's text to be in Inter 14px font, medium weight (#000, center-aligned, with 2px letter spacing) so that it remains clear and visually consistent with the rest of the section.
+Stacking Layout on Mobile: As a user, I want the Proficiency and Skills sections to stack vertically on screens below 640px width, with a 20px gap between sections, and the proficiency bars expanding to 100% width so that they adapt properly to smaller screens.
+
+Project Card Layout (Desktop): As a user, I want each project card to have a fixed width of 240px, height of 360px, with a border-radius of 12px, and a subtle shadow (#DADADA, 2px blur) so that it maintains a modern, structured look.
+Project Card Styling & Colors: As a user, I want the first project card (highlighted) to have a background color of #2E6E5B (dark green) with white text (#FFFFFF), while the other cards remain white (#FFFFFF) with black text (#000000) so that the featured project stands out.
+Typography & Spacing: As a user, I want the Project Name to be in bold, 18px Inter font (#000 for standard cards, #FFF for the highlighted card) with a 12px margin below, and the Brief, Technologies, and Responsibilities sections to use 14px regular-weight Inter font (#4A4A4A) with 18px line height for readability.
+Grid Layout (Desktop): As a user, I want the project cards to be displayed in a 4-column grid layout with a 20px gap between each card, ensuring a structured presentation of my projects.
+Mobile Responsive Stacking: As a user, I want the project cards to stack vertically on screens below 640px width, with a gap of 16px between each card, and the cards to adjust to 100% width with 16px padding so that they remain easily readable on mobile devices.
+Favourite Icon (Heart): As a user, I want a small heart icon (16px by 16px, #D9534F for active, #CCCCCC for inactive) positioned in the top-right corner with 8px padding so that I can visually indicate my favorite projects.
+
+Education Card Layout (Desktop): As a user, I want each education card to have a fixed width of 540px, height of 160px, with a border-radius of 12px, and a box-shadow (#DADADA, 2px blur) so that it looks structured and modern.
+Highlighted Latest Education Card: As a user, I want the most recent education card to have a dark green background (#2E6E5B), white text (#FFFFFF), and a "most recent" badge in red (#D9534F, 12px font, 8px border-radius) so that it stands out clearly.
+Typography & Spacing: As a user, I want the Institution Name to be in bold, 18px Inter font (#000 for standard cards, #FFF for the highlighted card) with a 12px margin below, and the Degree and Dates sections to use 14px regular-weight Inter font (#4A4A4A) with 20px line height for readability.
+Grid Layout (Desktop): As a user, I want the education cards to be stacked vertically with 16px spacing and aligned centered within a container of 60% width so that the section remains well-structured.
+Mobile Responsive Stacking: As a user, I want the education cards to expand to 100% width on screens below 640px, with 12px spacing between them, and the text size to be reduced to 16px for headings and 12px for descriptions to ensure readability on smaller screens.
+Bullet Points Formatting: As a user, I want the bullet points inside each education card to use 12px font, 18px line height, and left-aligned spacing of 8px from the edge so that they remain well-structured and readable.
+
+Headers: As a user, I want each category (e.g., “Design,” “Software,” and “Languages”) to be prominently labeled so that I can quickly scan and understand which tools belong to each group.
+Icons: As a user, I want the tool icons displayed in a uniform size and style so that the section appears visually cohesive and professional.
+Mobile Responsiveness: As a user, I want the Tools section to adapt to different screen sizes (e.g., stacking vertically on mobile, side-by-side on desktop) so that it remains visually appealing and easy to navigate on any device.
+Accessibility : As a user, I want accessible labels or alt text for each icon so that screen readers can clearly convey the information and I can identify the tools even if images fail to load.
+Typography: As a user, I want category labels (the black tabs) to have a distinct background and text style so that they stand out against the card’s background and are immediately recognizable.
+Mobile Responsive Stacking: As a user, I want the Tools section to automatically shift from a multi-column layout on desktop to a single-column layout on mobile so that I can easily view each category and icon without excessive scrolling or layout issues.
+
+Layout: As a user, I want each element’s width, height, and spacing to precisely match the design specs so that the layout appears clean, professional, and consistent across the site.
+Spacing: Margins and Padding: As a user, I want margins, paddings, and line-heights to follow the exact spacing guidelines so that the interface has a visually pleasing and balanced appearance.
+Typography and Headers: As a user, I want consistent font sizes and weights across headings and paragraphs so that the typography feels coherent and matches the predefined style guide.
+Colour Theme: As a user, I want color palettes and hover states to exactly match the provided design values so that I can trust the interface to behave consistently and remain brand-aligned.
+Images and Icons: As a user, I want all images, icons, and buttons to be aligned pixel-perfectly within their containers so that nothing looks out of place or visually jarring.
+Mobile Responsiveness: As a user, I want responsive breakpoints to be set according to the mockups so that on smaller screens the design still looks “pixel perfect” and elements reflow gracefully.
+User Friendly Components: As a user, I want the code (HTML, CSS, JS) structured in a modular way so that making changes in one component doesn’t break pixel-accurate layout in other parts of the site.
+Pixel Perfect Sizing: As a user, I want each section to preserve the exact proportions (e.g., aspect ratios, spacing) found in the design so that the final build appears identical to the approved mockups.
+Typography Design: As a user, I want to see consistent spacing between text blocks, images, and interactive elements so that the site has a unified, polished look that is easy on the eyes.
+
+*/
