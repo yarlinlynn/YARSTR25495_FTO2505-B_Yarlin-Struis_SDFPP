@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="" />
+    <meta name="description" content="Professional Resume Project for SDFPP" />
     <link
       rel="shortcut icon"
       href=""
@@ -16,10 +16,14 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
+                
+    <a class="skip-link" href="#main-content"></a>  <!-- Skip to main content -->
+
     <!-- header content displaying profile image with name and introduction paragraph -->
     <header>
         <a href="#">
             <!-- profile image goes here -->
+             <img src="" alt="Portrait of Your Name"/>
         </a>
         <section>
             <h1></h1>
@@ -28,24 +32,24 @@
     </header>
 
     <!-- main content including multiple sections of the webpage -->
-    <main>
+    <main id="main-content">
         <section class="proficiency-section">
             <h2></h2>
             <p></p>
             <div class="container">
-                <div class="proficieny-level">
+                <div class="proficieny-level" role="group" aria-label="HTML Proficiency">
                     <span class="language"></span>
                     <span class="progress-bar"></span>
                 </div>
-                <div class="proficieny-level">
+                <div class="proficieny-level" role="group" aria-label="HTML Proficiency">
                     <span class="language"></span>
                     <span class="progress-bar"></span>
                 </div>
-                <div class="proficieny-level">
+                <div class="proficieny-level" role="group" aria-label="HTML Proficiency">
                     <span class="language"></span>
                     <span class="progress-bar"></span>
                 </div>
-                <div class="proficieny-level">
+                <div class="proficieny-level" role="group" aria-label="HTML Proficiency">
                     <span class="language"></span>
                     <span class="progress-bar"></span>
                 </div>
@@ -54,7 +58,7 @@
 
         <section class="skills-section">
             <h2></h2>
-            <ul role="list">
+            <ul role="list" aria-label="List of technical skills">
                 <li class="skill-tag"></li>
                 <li class="skill-tag"></li>
                 <li class="skill-tag"></li>
@@ -73,13 +77,15 @@
             <div class="container">
                 <div class="project-card">
                     <div class="card-header">
-                        <span class="date"></span>
+                        <!-- <span class="date"></span> -->
+                        <time class="date" datetime="2024-01"></time>
                         <!-- icon figure goes here -->
+
                     </div>
                     <h3 class="project-name"></h3>
                     <p>
                         <span class="bold-text"> </span>
-                        
+                        <!-- <strong></strong> possibily add a strong tag for bold text -->
                     </p>
                     <p>
                         <span class="bold-text"> </span>
@@ -91,65 +97,6 @@
                     </p>
                 </div>
 
-                <div class="project-card">
-                    <div class="card-header">
-                        <span class="date"></span>
-                        <!-- icon figure goes here -->
-                    </div>
-                    <h3 class="project-name"></h3>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <span class="date"></span>
-                        <!-- icon figure goes here -->
-                    </div>
-                    <h3 class="project-name"></h3>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <span class="date"></span>
-                        <!-- icon figure goes here -->
-                    </div>
-                    <h3 class="project-name"></h3>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                    <p>
-                        <span class="bold-text"> </span>
-                        
-                    </p>
-                </div>
             </div>
         </section>
 
@@ -159,6 +106,7 @@
                 <div class="education-info">
                     <div class="banner">
                         <span class="date"></span>
+                        <!-- <time class="date" datetime="2022-01">2022</time> -->
                         <span class="tag"></span> 
                     </div>
                     <h3></h3>
@@ -178,7 +126,8 @@
                 <p class="card-benner"></p>
                 <div class="card-container">
                     <div class="card" aria-labelledby="Languages">
-                        <ul role="list">
+                        <!-- <h3 id="Languages">Languages</h3> or use the strong tag or h4/h5 -->
+                        <ul  role="list" aria-labelledby="Languages">
                             <li>
                                 <!-- image/icon of tools goes here -->
                             </li>
@@ -200,39 +149,6 @@
                         </ul>
                     </div>
 
-                    <div class="card" aria-labelledby="Design">
-                        <ul role="list">
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card" aria-labelledby="Tools">
-                        <ul role="list">
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                            <li>
-                                <!-- image/icon of tools goes here -->
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </section>
@@ -243,38 +159,7 @@
                 <div class="experience-info">
                     <div class="banner">
                         <span class="date"></span>
-                        <span class="tag"></span>
-                    </div>
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <ul role="list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="experience-info">
-                    <div class="banner">
-                        <span class="date"></span>
-                        <span class="tag"></span>
-                    </div>
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <ul role="list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="experience-info">
-                    <div class="banner">
-                        <span class="date"></span>
+                        <!-- <time class="date" datetime="2023-01">2023</time> -->
                         <span class="tag"></span>
                     </div>
                     <h3></h3>
@@ -287,17 +172,18 @@
                 </ul>
             </article>
         </section>
+
     </main>
 
     <!-- displaying contact information with links to my socials-->
     <footer>
         <h2></h2>
         <address>
-            <a href="mailto:yourname@example.com" aria-label="">
+            <a href="mailto: " aria-label="Send email to ">
               
             </a>
             <hr/>
-            <a href="tel:+27123456789" aria-label="">
+            <a href="tel: " aria-label="Call ">
              
             </a>
         </address>
@@ -306,140 +192,3 @@
 </body>
 </html>
 
-<!-- 
-<header>
-    <div class="profile-img">
-            
-    </div>
-        
-    <div class="profile-content">
-        <h1 class="resume-title">Name Surname</h1>
-        <p class="descriptive-text">I am a passionate and dedicated software developer with a strong foundation in JavaScript and React. </p>
-    </div>
-</header>
-
-<main>
-        <section class="proficiency-section">
-            <h2>Proficiency</h2>
-            <p>Beginner  Intermediate Advance*</p>
-            <div class="container">
-                <div class="proficieny-level">
-                    <span class="language">JavaScript</span>
-                    <span class="progress-bar"></span>
-                </div>
-                <div class="proficieny-level">
-                    <span class="language">React</span>
-                    <span class="progress-bar"></span>
-                </div>
-                <div class="proficieny-level">
-                    <span class="language">Node.js</span>
-                    <span class="progress-bar"></span>
-                </div>
-                <div class="proficieny-level">
-                    <span class="language">HTML + CSS</span>
-                    <span class="progress-bar"></span>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>Skills</h2>
-            <ul role="list">
-                <li class="skill-tag">software development</li>
-                <li class="skill-tag">agile</li>
-                <li class="skill-tag">ui design</li>
-                <li class="skill-tag">problem solving</li>
-                <li class="skill-tag">git and version control</li>
-                <li class="skill-tag">web development</li>
-                <li class="skill-tag">team collaboration</li>
-                <li class="skill-tag">functional programming</li>
-                <li class="skill-tag">RESTful APIs</li>
-            </ul>
-        </section>
-
-        <section class="projects-section">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <div class="card-header">
-                    <span class="date">2025</span>
-                    
-                </div>
-
-                <div class="project-content">
-                    <h3>Portfolio Website</h3>
-                    <p>
-                        <span class="bold-text">Brief: </span>
-                        Developed a personal portfolio website to showcase projects and skills.
-                    </p>
-                    <p>
-                        <span class="bold-text">Technologies: </span>
-                        React, JavaScript, HTML, CSS
-                    </p>
-                    <p>
-                        <span class="bold-text">Responsibilities: </span>
-                        Designed and implemented the website, ensured responsiveness and accessibility.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="education-section">
-            <h2>Education</h2>
-
-            <div class="card">
-                <div class="card-header">
-                    <span>Aug. 2025 - Mar. 2026</span>
-                    <span class="tag">most recent</span>
-                </div>
-                <div class="education-content">
-                    <div class="job-info">
-                        <h3>CodeSpace Academy</h3>
-                        <p>Software Development</p>
-                        <p>Full-time</p>
-                    </div>
-                    <ul class="">
-                        <li>
-                            Focused on React and JavaScript to build intuitive, dynamic web applications
-                        </li>
-                        <li>
-                            Collaborated with peers on real-world personal projects, refining teamwork and coding best practices
-                        </li>
-                        <li>
-                            Gained hands-on experience with cutting-edge web technologies and development tools
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="tools-section">
-            <h2>Tools</h2>
-            <div class="container">
-                <div class="card">
-                    <h4></h4>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="experience-section">
-            <h2></h2>
-            <article>
-
-            </article>
-        </section>
-    </main>
-
-<footer>
-        <h2>Let’s chat! I’m ready to work on exciting projects. </h2>
-        <address>
-            <a href="mailto:yourname@example.com" aria-label="Email yourname@example.com">
-              📧 yourname@example.com
-            </a>
-            <hr/>
-            <a href="tel:+27123456789" aria-label="Call +27 12 345 6789">
-              📞 +27 12 345 6789
-            </a>
-        </address>
-    </footer>
--->
