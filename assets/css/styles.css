@@ -1,3 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* add to the head in my html if using tailwind css:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+*/
+
+/*-----------------------------------*\
+  #CUSTOM STYLES
+\*-----------------------------------*/
+:root {
+    /* Colours: */
+
+    --Charcoal: rgba(63, 61, 61, 1);
+    --White: rgba(255, 255, 255, 1);
+    --Black: rgba(0, 0, 0, 1);
+    --Slate-Gray: rgba(92, 92, 92, 1);
+    --Desaturated-Teal: rgba(74, 139, 112, 1);
+    --Light-Teal: rgba(231, 240, 236, 1);
+    --Rust: rgba(215, 98, 57, 1);
+
+    /* Font sizes: */
+    --font-size-1: 5px;
+    --font-size-2: 8px;
+    --font-sizee-3: 9.69px;
+    --font-size-4: 10px;
+    --font-size-5: 12px;
+    --font-size-6: 12.11px;
+    --font-size-7: 14px;
+    --font-size-8: 16px;
+
+
+    /* Font weight: */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+/*-----------------------------------*\
+  #RESET STYLES
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-size-4);
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 1.125rem 2.6875rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li { list-style: none; }
+
+/* 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px */
+img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 24px;
+    object-fit: cover;
+
+}
+
+/*-----------------------------------*\
+  #LAYOUT
+\*-----------------------------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    border: 1px solid black;
+    width: 28%; 
+    height: 8.5625rem;
+}
+
+header section {
+    border: 1px solid black;
+    width: 70%; 
+    height: 8.5625rem;
+}
+
+main { 
+    clear: both; 
+}
+
+main > section { margin: 1rem 0; }
+
+.proficiency-section {
+    border: 1px solid black;
+    float: left; 
+    width: 100%; 
+    height: 300px;
+}
+
+.skills-section {
+    border: 1px solid black;
+    float: left;
+    width: 100%; 
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.projects-section {
+    width: 100%;
+    border: 1px solid black;
+    height: 250px;
+    clear: both;
+}
+
+.education-section {
+    border: 1px solid black;
+    float: left;
+    width: 100%;
+    height: 300px;
+}
+
+.tools-section {
+    border: 1px solid black;
+    float: left;
+    width: 100%;
+    height: 300px;
+}
+
+.experience-section {
+    border: 1px solid black;
+    clear: both;
+    height: 200px;
+}
+
+footer {
+    border: 1px solid black;
+    height: 100px;
+}
+
+hr { display: none; }
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media screen and (min-width: 600px) {
+    .proficiency-section { 
+        width: 49%;
+        margin-right: 2%;  
+    }
+
+    .skills-section { 
+        width: 49%; 
+    }
+
+    .education-section { 
+        width: 69%;
+        margin-right: 2%;
+        height: 300px;
+    }
+
+    .tools-section { width: 29%; }
+}
+
+
+
 /*
 requirements for stying my project:
 Profile Picture: As a user, I want the profile picture to be displayed in a 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px so that it maintains a clean and modern design.
