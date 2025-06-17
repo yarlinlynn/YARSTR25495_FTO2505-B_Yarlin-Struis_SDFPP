@@ -22,14 +22,14 @@
     --Rust: rgba(215, 98, 57, 1);
 
     /* Font sizes: */
-    --font-size-1: 5px;
-    --font-size-2: 8px;
-    --font-sizee-3: 9.69px;
-    --font-size-4: 10px;
-    --font-size-5: 12px;
-    --font-size-6: 12.11px;
-    --font-size-7: 14px;
-    --font-size-8: 16px;
+    --font-size-1: 0.3125rem;    /* 5px */
+    --font-size-2: 0.5rem;       /* 8px */
+    --font-size-3: 0.6056rem;   /* 9.69px */
+    --font-size-4: 0.625rem;     /* 10px */
+    --font-size-5: 0.75rem;      /* 12px */
+    --font-size-6: 0.7569rem;    /* 12.11px */
+    --font-size-7: 0.875rem;     /* 14px */
+    --font-size-8: 1rem;         /* 16px */
 
 
     /* Font weight: */
@@ -37,6 +37,30 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     --font-bold: 700;
+}
+
+h1 {
+    font-size: var(--font-size-8);
+    font-weight: var(--font-semi-bold);
+}
+
+h2 {
+    font-size: var(--font-size-7);
+    font-weight: var(--font-medium);
+}
+
+.container { display: grid; }
+
+.skill-tag {
+    background-color: var(--Light-Teal);
+    color: var(--Black);
+    font-size: var(--font-size-4);
+    padding: 0.4rem 1rem;
+}
+
+.active-card {
+    background-color: var(--Desaturated-Teal) !important;
+    color: var(--Light-Teal)!important ;
 }
 
 /*-----------------------------------*\
@@ -51,12 +75,16 @@
 }
 
 html {
-    font-size: var(--font-size-4);
+    font-size: 62.5%;
     font-family: "Poppins", sans-serif;
 }
 
 body {
     margin: 1.125rem 2.6875rem;
+    font-size: var(--font-size-4);
+    background-image: url(/assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a {
@@ -75,6 +103,15 @@ img {
 
 }
 
+hr { display: none; }
+
+section,
+a,
+footer {
+    background-color: var(--White);
+    border-radius: 12px;
+}
+
 /*-----------------------------------*\
   #LAYOUT
 \*-----------------------------------*/
@@ -83,18 +120,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1.74%;
 }
 
 header a {
-    border: 1px solid black;
-    width: 28%; 
+    /* border: 1px solid black;  */
+    width: 36.57%;
+    /* width: 28%;  */
     height: 8.5625rem;
 }
 
 header section {
-    border: 1px solid black;
-    width: 70%; 
+    /* border: 1px solid black; */
+    /* width: 40.55%;  */
+    width: 70%;  
     height: 8.5625rem;
+    padding: 19.5px 12px;
 }
 
 main { 
@@ -104,62 +145,184 @@ main {
 main > section { margin: 1rem 0; }
 
 .proficiency-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: left; 
     width: 100%; 
-    height: 300px;
 }
 
 .skills-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: left;
     width: 100%; 
-    height: 300px;
     margin-bottom: 1rem;
 }
 
 .projects-section {
     width: 100%;
-    border: 1px solid black;
-    height: 250px;
+    /* border: 1px solid black; */
     clear: both;
 }
 
 .education-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: left;
     width: 100%;
     height: 300px;
 }
 
 .tools-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: left;
     width: 100%;
     height: 300px;
 }
 
 .experience-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     clear: both;
     height: 200px;
 }
 
 footer {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100px;
 }
 
-hr { display: none; }
+/*-----------------------------------*\
+  #
+\*-----------------------------------*/
+
+.proficiency-section {
+    display: grid;
+    gap: 16px;
+    padding: 12px;
+    font-weight: var(--font-medium);
+}
+
+.proficiency-section > p,
+.proficieny-level > span {
+    font-size: var(--font-size-4);
+}
+
+.proficiency-section > .container {
+    display: grid;
+    gap: 10px;
+    width: 92.45%
+}
+
+.proficieny-level {
+    display: grid;
+    grid-template-columns: 20.7% 1fr;
+    align-items: center;
+    gap: 17px;
+} 
+
+/* .language {
+    width: 20.07%;
+} */
+
+.progress-track {
+  width: 100%;
+  height: 11px;
+  /* background-color: #ccc;
+  border-radius: 4px; */
+  overflow: hidden;
+    border-radius: 3px;
+}
+
+.progress-bar {
+    background-color: var(--Desaturated-Teal);
+    z-index: 5;
+    position: relative;
+    border-radius: 3px;
+}
+
+.proficieny-level:nth-child(1) .progress-bar {
+    width: 41.19%;
+    height: 100%;
+}
+
+.proficieny-level:nth-child(2) .progress-bar {
+    width: 	30.19%;
+    height: 100%;
+}
+
+.proficieny-level:nth-child(3) .progress-bar {
+    width: 414.78%;
+    height: 100%;
+}
+
+.proficieny-level:nth-child(4) .progress-bar {
+    width: 14.78%;
+    height: 100%;
+}
+
+/*-----------------------------------*\
+  #SKILLS SECTION
+\*-----------------------------------*/
+
+.skills-section { padding: 12px; }
+
+.skills-section ul {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.skills-section ul > li { border-radius: 40px; }
+
+/*-----------------------------------*\
+  #PROJECTS SECTION
+\*-----------------------------------*/
+.projects-section { 
+    padding: 15px 15px 17px; 
+    /* height: 632px; */
+}
+
+.projects-section > h2 { margin-bottom: 6.34px; }
+
+.projects-section > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 48.11%);
+    gap: 3.44%;
+}
+
+.project-card {
+    padding: 12px 9.69px;
+    border-radius: 12.11px;
+    /* margin-top: 6.34px; */
+    background: var(--Light-Teal);
+    color: var(--Black);
+    /* height: 267px; */
+    display: grid;
+    gap: 9.69px;
+}
+
+.project-card .ri-heart-fill { display: none; }
+
+.active-card .ri-heart-fill { color: var(--Rust); }
+
+.projects-section .project-card > .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    font-size: var(--font-size-6);
+}
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
 @media screen and (min-width: 600px) {
+
     .proficiency-section { 
         width: 49%;
-        margin-right: 2%;  
+        margin-right: 2%; 
     }
 
     .skills-section { 
