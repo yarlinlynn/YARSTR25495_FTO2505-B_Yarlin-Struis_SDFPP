@@ -90,6 +90,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px */
@@ -549,6 +550,10 @@ footer a {
 
     .education-section .card.active-card .banner { display: none; }
 
+    .card.active-card > .card-info > .education-info > .date {
+        display: block;
+    }
+
     .tools-section > h2 {
         margin-top: 31.87px;
         margin-bottom: 36.13px;
@@ -571,9 +576,9 @@ footer a {
         height: 41.14px;
     }
 
-    .card.active-card .card-info ul {
+    .experience-section .card.active-card .card-info ul {
         position: relative;
-        bottom: 2rem;
+        bottom: 3rem;
     }
 
     .card .experience-info { width: 30%; }
@@ -597,28 +602,39 @@ footer a {
 
 @media screen and (min-width: 1010px) {
 
-    header,
+    header { height: 300px; }
+
     main > section { margin-bottom: 48px; }
 
     .proficiency-section { 
         width: 49%;
         margin-right: 2%; 
+        height: 428.37px;
     }
 
-    .skills-section { width: 49%; }
+    .skills-section { 
+        width: 49%; 
+        height: 428.37px;
+    }
 
-    .education-section { width: 69%; }
+    .education-section { 
+        width: 69%; 
+        height: 847.06px;
+    }
 
-    .tools-section { width: 29%; }
+    .tools-section { 
+        width: 29%; 
+        height: 847.06px;
+    }
 
     footer a { font-size: 1.5125rem; }
 } 
 
 @media screen and (min-width: 1440px) {
-    body {
-        width: 80%;
+    /* body {
+        width: 80%; 
         margin: 3rem auto;
-    }
+    }  */
 
     .skills-section ul {
         margin-top: 39px; 
@@ -627,9 +643,12 @@ footer a {
     }
 }
 
-@media screen and (min-width: 1441px) {
-    body { width: 50%; }
-}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    body {
+        width: 80%; 
+        margin: 3rem auto;
+    } 
+} 
 
 /*
 requirements for stying my project:
