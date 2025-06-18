@@ -91,8 +91,6 @@ a {
     text-decoration: none;
 }
 
-li { list-style: none; }
-
 /* 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px */
 img {
     width: 100%;
@@ -100,8 +98,9 @@ img {
     aspect-ratio: 1;
     border-radius: 24px;
     object-fit: cover;
-
 }
+
+svg { width: 15px; }
 
 hr { display: none; }
 
@@ -145,13 +144,11 @@ main {
 main > section { margin: 1rem 0; }
 
 .proficiency-section {
-    /* border: 1px solid black; */
     float: left; 
     width: 100%; 
 }
 
 .skills-section {
-    /* border: 1px solid black; */
     float: left;
     width: 100%; 
     margin-bottom: 1rem;
@@ -159,37 +156,26 @@ main > section { margin: 1rem 0; }
 
 .projects-section {
     width: 100%;
-    /* border: 1px solid black; */
     clear: both;
 }
 
 .education-section {
-    /* border: 1px solid black; */
     float: left;
     width: 100%;
-    height: 300px;
 }
 
 .tools-section {
-    /* border: 1px solid black; */
     float: left;
     width: 100%;
-    height: 300px;
 }
 
 .experience-section {
-    /* border: 1px solid black; */
     clear: both;
-    height: 200px;
-}
-
-footer {
-    /* border: 1px solid black; */
-    height: 100px;
+    padding: 0 12px 11px;
 }
 
 /*-----------------------------------*\
-  #
+  #PROFICIENCY SECTION
 \*-----------------------------------*/
 
 .proficiency-section {
@@ -270,7 +256,10 @@ footer {
     margin-top: 16px;
 }
 
-.skills-section ul > li { border-radius: 40px; }
+.skills-section ul > li { 
+    border-radius: 40px; 
+    list-style: none;
+}
 
 /*-----------------------------------*\
   #PROJECTS SECTION
@@ -309,16 +298,153 @@ footer {
     justify-content: space-between;
 }
 
-.date {
-    font-size: var(--font-size-6);
+.date { font-size: var(--font-size-6); }
+
+.project-card > .bold-text { font-weight: var(--font-bold); }
+
+
+/*-----------------------------------*\
+  #EDUCATION SECTION
+\*-----------------------------------*/
+
+.education-section { 
+    padding: 12px; 
+    padding: 12px;
+    display: grid;
+    gap: 10px;
 }
 
+.education-section .card {
+    border-radius: 10px;
+    padding: 8px;
+    background: var(--Light-Teal);
+}
 
+.card > .card-info > .education-info > .date {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.card > ul li { list-style: circle; }
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+} 
+
+.tag {
+    background: var(--Rust);
+    color: var(--Light-Teal);
+    padding: 2px 6px;
+    border-radius: 59px;
+}
+
+/* .card > .banner { display: none; } */
+
+.card-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.education-info { width: 44.44%; }
+
+/* .education-info > .date:nth-child(1) { display: none; } */
+
+.card-info ul { width: 52.76%; }
+
+/*-----------------------------------*\
+  #TOOLS SECTION
+\*-----------------------------------*/
+.tools-section > h2 {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.tools-section > .container {
+    /* width: 27.14%;
+    height: 104px;
+    background: var(--Light-Teal); */
+    margin: 10px 20px;
+    border-radius: 6px;
+}
+
+.tools-section > .container {
+    display: grid;
+    grid-template-columns: repeat(3, 27.14%);
+    gap: 26px;
+}
+
+.card-container {
+    background-color: var(--Light-Teal);
+    /* height: 104px; */
+}
+
+.tools-section .card-banner {
+    background-color: var(--Black);
+    color: var(--Light-Teal);
+    /* padding: 2px 6px; */
+    /* margin: -5px auto; */
+    border-radius: 59px;
+    text-align: center;
+    width: 30px;
+    position: relative;
+    top: -5px;
+    margin: 0 auto;
+}
+
+.svg-container {
+    display: grid;
+    grid-template-columns: repeat(2, 12.75px);
+    list-style: none;
+    padding: 0 15.12px;
+    /* justify-content: space-between;     */
+}
+
+.svg-container li {
+    height: 12.75px;
+    width: 12.75px;
+}
+
+/*-----------------------------------*\
+  #EXPERIENCE SECTION
+\*-----------------------------------*/
+
+.experience-section > h2 { padding: 12px 0 6px; }
+
+.experience-section .card {
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 19px;
+    background-color: var(--Light-Teal);
+}
+
+.experience-section .card:last-child { margin-bottom: 0; }
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+    background: var(--Rust);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+footer > h2 { color: var(--White); }
+
+footer a { background: none; }
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
+
+    h1 { font-size: 2.25rem; }
+
+    h2 { font-size: 2.1175rem;}
 
     .proficiency-section { 
         width: 49%;
@@ -336,6 +462,10 @@ footer {
     }
 
     .tools-section { width: 29%; }
+
+    .tools-section .container {
+        grid-template-columns: 24.14%;
+    }
 }
 
 
