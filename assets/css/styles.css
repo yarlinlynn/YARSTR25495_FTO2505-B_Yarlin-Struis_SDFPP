@@ -85,6 +85,7 @@ body {
     background-image: url(/assets/images/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 a {
@@ -95,17 +96,12 @@ a {
 img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1;
     border-radius: 24px;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
-svg { width: 15px; }
-
-hr { display: none; }
-
 section,
-a,
 footer {
     background-color: var(--White);
     border-radius: 12px;
@@ -120,20 +116,19 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1.74%;
+    margin-bottom: 15px;
 }
 
 header a {
-    /* border: 1px solid black;  */
     width: 36.57%;
     /* width: 28%;  */
-    height: 8.5625rem;
+    height: 100%;
 }
 
 header section {
-    /* border: 1px solid black; */
-    /* width: 40.55%;  */
+    /* width: 40.55%;  
+    height: 8.5625rem;*/
     width: 70%;  
-    height: 8.5625rem;
     padding: 19.5px 12px;
 }
 
@@ -141,7 +136,7 @@ main {
     clear: both; 
 }
 
-main > section { margin: 1rem 0; }
+main > section { margin-bottom: 15px; }
 
 .proficiency-section {
     float: left; 
@@ -151,7 +146,6 @@ main > section { margin: 1rem 0; }
 .skills-section {
     float: left;
     width: 100%; 
-    margin-bottom: 1rem;
 }
 
 .projects-section {
@@ -202,10 +196,6 @@ main > section { margin: 1rem 0; }
     align-items: center;
     gap: 17px;
 } 
-
-/* .language {
-    width: 20.07%;
-} */
 
 .progress-track {
   width: 100%;
@@ -273,7 +263,7 @@ main > section { margin: 1rem 0; }
 
 .projects-section > .container {
     display: grid;
-    grid-template-columns: repeat(2, 48.11%);
+    grid-template-columns: repeat(2, 0.5fr);
     gap: 3.44%;
 }
 
@@ -290,7 +280,7 @@ main > section { margin: 1rem 0; }
 
 .project-card .ri-heart-fill { display: none; }
 
-.active-card .ri-heart-fill { color: var(--Rust); }
+.project-card .ri-heart-fill { color: var(--Rust); }
 
 .projects-section .project-card > .card-header {
     display: flex;
@@ -300,7 +290,7 @@ main > section { margin: 1rem 0; }
 
 .date { font-size: var(--font-size-6); }
 
-.project-card > .bold-text { font-weight: var(--font-bold); }
+.project-card .bold-text { font-weight: var(--font-bold); }
 
 
 /*-----------------------------------*\
@@ -319,6 +309,8 @@ main > section { margin: 1rem 0; }
     padding: 8px;
     background: var(--Light-Teal);
 }
+
+.card.active-card > .card-info > .education-info > .date { display: none; }
 
 .card > .card-info > .education-info > .date {
     display: inline-block;
@@ -341,8 +333,6 @@ main > section { margin: 1rem 0; }
     border-radius: 59px;
 }
 
-/* .card > .banner { display: none; } */
-
 .card-info {
     display: flex;
     align-items: flex-start;
@@ -350,8 +340,6 @@ main > section { margin: 1rem 0; }
 }
 
 .education-info { width: 44.44%; }
-
-/* .education-info > .date:nth-child(1) { display: none; } */
 
 .card-info ul { width: 52.76%; }
 
@@ -363,7 +351,7 @@ main > section { margin: 1rem 0; }
     text-align: center;
 }
 
-.tools-section > .container {
+.tools-section .container {
     /* width: 27.14%;
     height: 104px;
     background: var(--Light-Teal); */
@@ -371,7 +359,7 @@ main > section { margin: 1rem 0; }
     border-radius: 6px;
 }
 
-.tools-section > .container {
+.tools-section .container {
     display: grid;
     grid-template-columns: repeat(3, 27.14%);
     gap: 26px;
@@ -380,32 +368,52 @@ main > section { margin: 1rem 0; }
 .card-container {
     background-color: var(--Light-Teal);
     /* height: 104px; */
+    border-radius: 6px;
 }
 
 .tools-section .card-banner {
     background-color: var(--Black);
     color: var(--Light-Teal);
-    /* padding: 2px 6px; */
-    /* margin: -5px auto; */
+    padding: 2px 6px;
+    display: inline-grid;
+    /* align-items: center; */
     border-radius: 59px;
-    text-align: center;
-    width: 30px;
+    /* text-align: center; */
+    /* width: 30px; */
     position: relative;
     top: -5px;
-    margin: 0 auto;
 }
+
+.tools-section .card-banner:nth-child(1) { left: 25%; }
+
+.tools-section .card-banner:nth-child(2) { left: 22%; }
+
+.tools-section .card-banner:nth-child(3) { left: 19%; }
 
 .svg-container {
     display: grid;
-    grid-template-columns: repeat(2, 12.75px);
+    grid-template-columns: repeat(2, 1fr);
     list-style: none;
     padding: 0 15.12px;
-    /* justify-content: space-between;     */
+    gap: 14.42px;
+    align-items: center;
 }
 
-.svg-container li {
-    height: 12.75px;
-    width: 12.75px;
+.card-container:nth-child(1) .svg-container,
+.card-container:nth-child(2) .svg-container {
+    margin-top: 34.12px;
+    margin-bottom: 22px;
+}
+
+.card-container:nth-child(3) .svg-container {
+    margin-top: 5.41px;
+    margin-bottom: 13.9px;
+    gap: 16px;
+}
+
+.svg-container img {
+    width: 13.45px;
+    height: 15.17px
 }
 
 /*-----------------------------------*\
@@ -435,40 +443,193 @@ footer {
 
 footer > h2 { color: var(--White); }
 
-footer a { background: none; }
+footer .social-links {
+    display: flex;
+    align-items: center;
+    background: none;
+    gap: 1rem;
+}
+
+footer a { 
+    background: none; 
+    color: var(--Light-Teal);
+}
+
+.divider {
+    width: 1px;
+    height: 15px;
+    background-color: var(--Light-Teal);
+}
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: 1.375rem;
+    }
 
     h1 { font-size: 2.25rem; }
 
     h2 { font-size: 2.1175rem;}
+
+    header section {
+        padding: 59.74px 69.34px;
+    }
+
+    .descriptive-text { margin-top: 11.62px; }
+
+    .proficiency-section { 
+        padding: 51.14px 27.4px;
+        gap: 30px;
+    }
+
+    .proficiency-section > .container { gap: 15px; }
+
+    .proficieny-level {
+        grid-template-columns: 25% 1fr;
+        gap: 45.21px;
+    }
+
+    .skills-section { 
+        /* width: 49%; */
+        padding: 28px 28px 0;
+    }
+
+    .skills-section ul {
+        /* margin-top: 39px; */
+        margin-bottom: 31.47px;
+        /* gap: 19.36px; */
+    }
+
+    .skill-tag {
+        border-radius: 40px;
+        list-style: none;
+        padding: 9.68px 24.2px;
+    }
+
+    .proficiency-section > p, .proficieny-level > span, 
+    .skill-tag { font-size: 1.5725rem; }
+
+    .projects-section { padding: 44.05px 33.54px; }
+
+    .projects-section > h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .projects-section p { font-size: 1.5125rem;}
+
+    .projects-section > .container {    
+        grid-template-columns: repeat(4, 0.5fr); 
+        /* gap: 39px; */
+    }
+
+    .date {
+        font-size: 1.5125rem;
+    }
+
+    .project-card .ri-heart-fill { display: block; }
+
+    .project-card:nth-child(2) .ri-heart-fill { opacity: 0.89; }
+
+    .project-card:nth-child(3) .ri-heart-fill { opacity: 0.7; }
+
+    .project-card:nth-child(4) .ri-heart-fill { opacity: 0.5; }
+    
+    .education-section { 
+        /* width: 69%; */
+        margin-right: 2%;
+        padding: 29px 32px;
+    }
+
+    .education-section .card { padding: 34.01px 30.2px; }
+
+    .education-section .card.active-card .banner { display: none; }
+
+    .tools-section > h2 {
+        margin-top: 31.87px;
+        margin-bottom: 36.13px;
+    }
+
+    .tools-section .container {
+        grid-template-columns: 0.7fr;
+        gap: 29.04px;
+        justify-content: center;
+        margin-bottom: 45.63px;
+    }
+
+    .svg-container { 
+        grid-template-columns: repeat(2, 0.4fr);
+        justify-content: center;
+    }
+
+    .svg-container img {
+        width: 41.14px;
+        height: 41.14px;
+    }
+
+    .card.active-card .card-info ul {
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .card .experience-info { width: 30%; }
+
+    .experience-section { padding: 31px 27px; }
+
+    .experience-section > h2 { padding: 0 0 30px; }
+
+    .experience-section .card { padding: 19px 25px; }
+
+    .tag {
+        padding: 4.84px 16.71px;
+        font-size: 14.52px;
+    }
+
+    footer { padding: 29.04px; }
+
+    footer > h2 { margin-bottom: 12.92px; }
+
+}
+
+@media screen and (min-width: 1010px) {
+
+    header,
+    main > section { margin-bottom: 48px; }
 
     .proficiency-section { 
         width: 49%;
         margin-right: 2%; 
     }
 
-    .skills-section { 
-        width: 49%; 
-    }
+    .skills-section { width: 49%; }
 
-    .education-section { 
-        width: 69%;
-        margin-right: 2%;
-        height: 300px;
-    }
+    .education-section { width: 69%; }
 
     .tools-section { width: 29%; }
 
-    .tools-section .container {
-        grid-template-columns: 24.14%;
+    footer a { font-size: 1.5125rem; }
+} 
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .skills-section ul {
+        margin-top: 39px; 
+        margin-bottom: 31.47px;
+        gap: 19.36px; 
     }
 }
 
-
+@media screen and (min-width: 1441px) {
+    body { width: 50%; }
+}
 
 /*
 requirements for stying my project:
