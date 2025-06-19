@@ -1,0 +1,254 @@
+/*-----------------------------------*\
+  #LARGER MOBILE SCREEN SIZE
+\*-----------------------------------*/
+
+/* @media screen and (min-width: 370px) {
+    header a {
+        width: 300.1px;
+    }
+
+    
+}   */
+
+/*-----------------------------------*\
+  #TABLET SCREEN SSIZE
+\*-----------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: 1.375rem;
+        width: 90%;
+    }
+
+    h1 { font-size: 2.25rem; }
+
+    h2 { font-size: 2.1175rem;}
+
+    header a {
+        width: 300.1px;
+    }
+
+    header section {
+        width: 994.69px;
+    }
+
+    header a,
+    header section { height: 300.1px; }
+
+    header section {
+        padding: 59.74px 69.34px;
+    }
+
+    .descriptive-text { margin-top: 11.62px; }
+
+    .proficiency-section { 
+        padding: 51.14px 27.4px;
+        gap: 30px;
+    }
+
+    .proficiency-section > .container { gap: 15px; }
+
+    .proficieny-level {
+        grid-template-columns: 25% 1fr;
+        gap: 45.21px;
+    }
+
+    .progress-track { height: 26.62px; }
+
+    .skills-section { 
+        /* width: 49%; */
+        padding: 28px 28px 0;
+    }
+
+    .skills-section ul {
+        /* margin-top: 39px; */
+        margin-bottom: 31.47px;
+        /* gap: 19.36px; */
+    }
+
+    .skill-tag {
+        border-radius: 40px;
+        list-style: none;
+        padding: 9.68px 24.2px;
+    }
+
+    .proficiency-section > p, .proficieny-level > span, 
+    .skill-tag { font-size: 1.5725rem; }
+
+    .projects-section { padding: 44.05px 33.54px; }
+
+    .projects-section > h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .projects-section > .container { grid-template-columns: repeat(2, 272px) }
+
+    .projects-section p { font-size: 1.5125rem;}
+
+    .date {
+        font-size: 1.5125rem;
+    }
+
+    .project-card .ri-heart-fill { display: block; }
+
+    .project-card:nth-child(2) .ri-heart-fill { opacity: 0.89; }
+
+    .project-card:nth-child(3) .ri-heart-fill { opacity: 0.7; }
+
+    .project-card:nth-child(4) .ri-heart-fill { opacity: 0.5; }
+    
+    .education-section { 
+        /* width: 69%; */
+        margin-right: 2%;
+        padding: 29px 32px;
+    }
+
+    .education-info,
+    .experience-info { 
+        width: 267px;
+        /* margin-right: 30.79px; */
+    }
+
+    .education-section .card { padding: 34.01px 30.2px; }
+
+    .education-section .card.active-card .banner { display: none; }
+
+    .card.active-card > .card-info > .education-info > .date {
+        display: block;
+    }
+
+    .tools-section > h2 {
+        margin-top: 31.87px;
+        margin-bottom: 36.13px;
+    }
+
+    .tools-section .container {
+        gap: 29.04px;
+        justify-content: center;
+        margin-bottom: 45.63px;
+        grid-template-columns: repeat(3, 184px);
+    }
+
+    .card-container .card-banner {
+        border-radius: 142.79px;
+        padding: 4.84px 14.52px;
+    }
+
+    .svg-container { 
+        grid-template-columns: repeat(2, 0.4fr);
+        justify-content: center;
+        gap: 38.72px;
+    }
+
+    .svg-container.Design, .svg-container.Software {
+        padding: 31px 32px 22px;
+        grid-template-columns: repeat(2, 41.14px);
+        grid-template-rows: repeat(2, 41.41px);
+        gap: 38px;
+    }
+
+    .svg-container.Languages {
+        grid-template-columns: repeat(2, 41.14px);
+        grid-template-rows: repeat(3, 41.14px);
+        padding: 38px 31px 0;
+    }
+
+    .svg-container img {
+        width: 41.14px;
+        height: 41.14px;
+    }
+
+    /* .card .experience-info { width: 30%; } */
+
+    .experience-section { padding: 31px 27px; }
+
+    .experience-section > h2 { padding: 0 0 30px; }
+
+    .experience-section .card { padding: 19px 25px; }
+
+    .tag {
+        padding: 4.84px 16.71px;
+        font-size: 14.52px;
+    }
+
+    footer { padding: 29.04px; }
+
+    footer > h2 { margin-bottom: 12.92px; }
+
+    .divider { height: 10px; }
+
+}
+
+/*-----------------------------------*\
+  #LAPTOP SCREEEN SIZE
+\*-----------------------------------*/
+
+@media screen and (min-width: 1000px) {
+
+    header { 
+        height: 300px; 
+        margin-bottom: 47.9px;
+    }
+
+    main > section { margin-bottom: 48px; }
+
+    .proficiency-section { 
+        width: 49%;
+        margin-right: 2%; 
+        height: 428.37px;
+    }
+
+    .skills-section { 
+        width: 49%; 
+        height: 428.37px;
+    }
+
+    .skills-section ul {
+        margin-top: 39px; 
+        margin-bottom: 31.47px;
+        gap: 19.36px; 
+    }
+
+    .projects-section > .container {    
+        grid-template-columns: repeat(4, 0.5fr); 
+        gap: 49px;
+    }
+
+    .education-section { 
+        width: 69%; 
+        height: 847.06px;
+    }
+
+    .tools-section { 
+        width: 29%; 
+        height: 847.06px;
+    }
+
+    .tools-section .container { grid-template-columns: 183.93px; } 
+
+    .experience-section .card.active-card .card-info ul {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    footer a { font-size: 1.5125rem; }
+
+    .divider {
+        height: 15px;
+    }
+} 
+
+/*-----------------------------------*\
+  #DESKTOP AND BIGGER THAN DESKTOP 
+\*-----------------------------------*/
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    body {
+        width: 80%; 
+        margin: 3rem auto;
+    } 
+
+    .tools-section .container { grid-template-columns: 0.5fr; }
+} 

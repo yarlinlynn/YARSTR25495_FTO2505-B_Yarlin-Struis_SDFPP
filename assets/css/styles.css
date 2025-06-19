@@ -1,12 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* add to the head in my html if using tailwind css:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-*/
-
 /*-----------------------------------*\
   #CUSTOM STYLES
 \*-----------------------------------*/
@@ -86,6 +80,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 317px; 
+    margin: 2rem auto; 
 }
 
 a {
@@ -93,7 +89,6 @@ a {
     color: inherit;
 }
 
-/* 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px */
 img {
     width: 100%;
     height: 100%;
@@ -118,18 +113,22 @@ header {
     justify-content: space-between;
     gap: 1.74%;
     margin-bottom: 15px;
-}
+} 
 
 header a {
-    width: 36.57%;
-    /* width: 28%;  */
-    height: 100%;
+    width: 147px;
+    /* height: 137px; */
+    background-color: var(--White);
+    border-radius: 12px;
+    /*width: 36.57%;
+     width: 28%; */ 
 }
 
 header section {
     /* width: 40.55%;  
-    height: 8.5625rem;*/
-    width: 70%;  
+    /* width: 70%;   */
+    width: 163px;
+    /* height: 137px; */
     padding: 19.5px 12px;
 }
 
@@ -264,8 +263,11 @@ main > section { margin-bottom: 15px; }
 
 .projects-section > .container {
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    gap: 3.44%;
+    grid-template-columns: repeat(2, 139px);
+    /* grid-template-columns: repeat(auto-fit, minmax(139px, 1fr)); */
+    gap: 12.73px;
+    margin-bottom: 17px;
+    justify-content: center;
 }
 
 .project-card {
@@ -340,82 +342,72 @@ main > section { margin-bottom: 15px; }
     gap: 9px;
 }
 
-.education-info { width: 44.44%; }
+.education-info,
+.experience-info { width: 124px; }
 
-.card-info ul { width: 52.76%; }
+.card-info ul { 
+    width: 52.76%;
+} 
 
 /*-----------------------------------*\
   #TOOLS SECTION
 \*-----------------------------------*/
+
 .tools-section > h2 {
-    margin-top: 8px;
     text-align: center;
+    margin: 13px 0 10px;
 }
 
 .tools-section .container {
-    /* width: 27.14%;
-    height: 104px;
-    background: var(--Light-Teal); */
-    margin: 10px 20px;
-    border-radius: 6px;
-}
-
-.tools-section .container {
+    padding: 0 20px 18px;
     display: grid;
-    grid-template-columns: repeat(3, 27.14%);
+    grid-template-columns: repeat(3, 76px);
     gap: 26px;
+    justify-content: center;
 }
 
-.card-container {
-    background-color: var(--Light-Teal);
-    /* height: 104px; */
-    border-radius: 6px;
-}
+.card-container { position: relative; }
 
-.tools-section .card-banner {
+.card-container .card-banner {
     background-color: var(--Black);
     color: var(--Light-Teal);
     padding: 2px 6px;
-    display: inline-grid;
-    /* align-items: center; */
-    border-radius: 59px;
-    /* text-align: center; */
-    /* width: 30px; */
+    border-radius: 6px;
     position: relative;
-    top: -5px;
+    top: 5px;
 }
 
-.tools-section .card-banner:nth-child(1) { left: 25%; }
+.card-container.Design .card-banner { left: 27%; }
 
-.tools-section .card-banner:nth-child(2) { left: 22%; }
+.card-container.Software .card-banner { left: 25%; }
 
-.tools-section .card-banner:nth-child(3) { left: 19%; }
+.card-container.Languages .card-banner { left: 20%; }
 
 .svg-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    list-style: none;
-    padding: 0 15.12px;
-    gap: 14.42px;
-    align-items: center;
-}
-
-.card-container:nth-child(1) .svg-container,
-.card-container:nth-child(2) .svg-container {
-    margin-top: 34.12px;
-    margin-bottom: 22px;
-}
-
-.card-container:nth-child(3) .svg-container {
-    margin-top: 5.41px;
-    margin-bottom: 13.9px;
+    grid-template-columns: repeat(2, 13.45px);
     gap: 16px;
+    background-color: var(--Light-Teal);
+    padding: 0 13px;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.svg-container.Design,
+.svg-container.Software {
+    grid-template-rows: repeat(2, 15.17px);
+    padding: 40px 15px 27px;
+}
+
+.svg-container.Languages {
+    /* grid-template-rows: repeat(3, 17px); */
+    padding: 11.41px 13px;
 }
 
 .svg-container img {
     width: 13.45px;
     height: 15.17px
-}
+} 
 
 /*-----------------------------------*\
   #EXPERIENCE SECTION
@@ -431,6 +423,8 @@ main > section { margin-bottom: 15px; }
 }
 
 .experience-section .card:last-child { margin-bottom: 0; }
+
+.experience-section > .card > ul.list { margin-left: 1rem; }
 
 /*-----------------------------------*\
   #FOOTER
@@ -458,243 +452,7 @@ footer a {
 
 .divider {
     width: 1px;
-    height: 15px;
+    height: 5px;
     background-color: var(--Light-Teal);
 }
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-@media screen and (min-width: 768px) {
-
-    body {
-        font-size: 1.375rem;
-    }
-
-    h1 { font-size: 2.25rem; }
-
-    h2 { font-size: 2.1175rem;}
-
-    header section {
-        padding: 59.74px 69.34px;
-    }
-
-    .descriptive-text { margin-top: 11.62px; }
-
-    .proficiency-section { 
-        padding: 51.14px 27.4px;
-        gap: 30px;
-    }
-
-    .proficiency-section > .container { gap: 15px; }
-
-    .proficieny-level {
-        grid-template-columns: 25% 1fr;
-        gap: 45.21px;
-    }
-
-    .skills-section { 
-        /* width: 49%; */
-        padding: 28px 28px 0;
-    }
-
-    .skills-section ul {
-        /* margin-top: 39px; */
-        margin-bottom: 31.47px;
-        /* gap: 19.36px; */
-    }
-
-    .skill-tag {
-        border-radius: 40px;
-        list-style: none;
-        padding: 9.68px 24.2px;
-    }
-
-    .proficiency-section > p, .proficieny-level > span, 
-    .skill-tag { font-size: 1.5725rem; }
-
-    .projects-section { padding: 44.05px 33.54px; }
-
-    .projects-section > h2 {
-        text-align: center;
-        margin-bottom: 35px;
-    }
-
-    .projects-section p { font-size: 1.5125rem;}
-
-    .projects-section > .container {    
-        grid-template-columns: repeat(4, 0.5fr); 
-        /* gap: 39px; */
-    }
-
-    .date {
-        font-size: 1.5125rem;
-    }
-
-    .project-card .ri-heart-fill { display: block; }
-
-    .project-card:nth-child(2) .ri-heart-fill { opacity: 0.89; }
-
-    .project-card:nth-child(3) .ri-heart-fill { opacity: 0.7; }
-
-    .project-card:nth-child(4) .ri-heart-fill { opacity: 0.5; }
-    
-    .education-section { 
-        /* width: 69%; */
-        margin-right: 2%;
-        padding: 29px 32px;
-    }
-
-    .education-section .card { padding: 34.01px 30.2px; }
-
-    .education-section .card.active-card .banner { display: none; }
-
-    .card.active-card > .card-info > .education-info > .date {
-        display: block;
-    }
-
-    .tools-section > h2 {
-        margin-top: 31.87px;
-        margin-bottom: 36.13px;
-    }
-
-    .tools-section .container {
-        grid-template-columns: 0.7fr;
-        gap: 29.04px;
-        justify-content: center;
-        margin-bottom: 45.63px;
-    }
-
-    .svg-container { 
-        grid-template-columns: repeat(2, 0.4fr);
-        justify-content: center;
-    }
-
-    .svg-container img {
-        width: 41.14px;
-        height: 41.14px;
-    }
-
-    .experience-section .card.active-card .card-info ul {
-        position: relative;
-        bottom: 3rem;
-    }
-
-    .card .experience-info { width: 30%; }
-
-    .experience-section { padding: 31px 27px; }
-
-    .experience-section > h2 { padding: 0 0 30px; }
-
-    .experience-section .card { padding: 19px 25px; }
-
-    .tag {
-        padding: 4.84px 16.71px;
-        font-size: 14.52px;
-    }
-
-    footer { padding: 29.04px; }
-
-    footer > h2 { margin-bottom: 12.92px; }
-
-}
-
-@media screen and (min-width: 1010px) {
-
-    header { height: 300px; }
-
-    main > section { margin-bottom: 48px; }
-
-    .proficiency-section { 
-        width: 49%;
-        margin-right: 2%; 
-        height: 428.37px;
-    }
-
-    .skills-section { 
-        width: 49%; 
-        height: 428.37px;
-    }
-
-    .education-section { 
-        width: 69%; 
-        height: 847.06px;
-    }
-
-    .tools-section { 
-        width: 29%; 
-        height: 847.06px;
-    }
-
-    footer a { font-size: 1.5125rem; }
-} 
-
-@media screen and (min-width: 1440px) {
-    /* body {
-        width: 80%; 
-        margin: 3rem auto;
-    }  */
-
-    .skills-section ul {
-        margin-top: 39px; 
-        margin-bottom: 31.47px;
-        gap: 19.36px; 
-    }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
-    body {
-        width: 80%; 
-        margin: 3rem auto;
-    } 
-} 
-
-/*
-requirements for stying my project:
-Profile Picture: As a user, I want the profile picture to be displayed in a 1:1 aspect ratio with 24px rounded corners and a fixed size of 144px by 144px so that it maintains a clean and modern design.
-Name Display: As a user, I want the name and surname to be displayed in bold, 22px Inter font (#000, left-aligned) with 16px bottom margin so that it stands out clearly.
-Bio Text: As a user, I want my bio to be displayed in a 16px, regular-weight Inter font (#4A4A4A, max 320 characters) with 24px line height and a max width of 520px so that it remains readable and visually balanced.
-Container Styling: As a user, I want the profile section to have a white background (#FFFFFF), 24px padding, and a border-radius of 12px with a subtle box shadow (#DADADA, 3px blur) so that it appears modern and professional.
-Mobile Responsive Stacking: As a user, I want the profile picture to resize to 96px by 96px, with the name in 18px font and bio in 14px font, stacking vertically on screens below 640px width so that it adapts properly to mobile layouts.
-
-Proficiency Bars: As a user, I want each skill proficiency bar to have a height of 6px, a corner radius of 3px, and a dark green fill (#396B5E) so that my skill levels are visually distinct while maintaining a sleek design.
-Proficiency Labels: As a user, I want the proficiency levels ("Beginner," "Intermediate," "Advanced*") to be displayed in bold, 14px Inter font (#000, left-aligned) with 12px spacing between each level so that they are easy to read and follow the design.
-Proficiency Section Layout: As a user, I want the proficiency section to have a white background (#FFFFFF), 20px padding, a border-radius of 12px, and a shadow (#DADADA, 2px blur) so that it looks modern and professional while maintaining consistent spacing.
-
-Skill Tags Design: As a user, I want each skill tag to be a light green pill shape (#ECF4F1) with 8px vertical padding, 14px horizontal padding, and 6px rounded corners so that they stand out as interactive elements while keeping a balanced look.
-Skill Text Styling: As a user, I want each skill tag's text to be in Inter 14px font, medium weight (#000, center-aligned, with 2px letter spacing) so that it remains clear and visually consistent with the rest of the section.
-Stacking Layout on Mobile: As a user, I want the Proficiency and Skills sections to stack vertically on screens below 640px width, with a 20px gap between sections, and the proficiency bars expanding to 100% width so that they adapt properly to smaller screens.
-
-Project Card Layout (Desktop): As a user, I want each project card to have a fixed width of 240px, height of 360px, with a border-radius of 12px, and a subtle shadow (#DADADA, 2px blur) so that it maintains a modern, structured look.
-Project Card Styling & Colors: As a user, I want the first project card (highlighted) to have a background color of #2E6E5B (dark green) with white text (#FFFFFF), while the other cards remain white (#FFFFFF) with black text (#000000) so that the featured project stands out.
-Typography & Spacing: As a user, I want the Project Name to be in bold, 18px Inter font (#000 for standard cards, #FFF for the highlighted card) with a 12px margin below, and the Brief, Technologies, and Responsibilities sections to use 14px regular-weight Inter font (#4A4A4A) with 18px line height for readability.
-Grid Layout (Desktop): As a user, I want the project cards to be displayed in a 4-column grid layout with a 20px gap between each card, ensuring a structured presentation of my projects.
-Mobile Responsive Stacking: As a user, I want the project cards to stack vertically on screens below 640px width, with a gap of 16px between each card, and the cards to adjust to 100% width with 16px padding so that they remain easily readable on mobile devices.
-Favourite Icon (Heart): As a user, I want a small heart icon (16px by 16px, #D9534F for active, #CCCCCC for inactive) positioned in the top-right corner with 8px padding so that I can visually indicate my favorite projects.
-
-Education Card Layout (Desktop): As a user, I want each education card to have a fixed width of 540px, height of 160px, with a border-radius of 12px, and a box-shadow (#DADADA, 2px blur) so that it looks structured and modern.
-Highlighted Latest Education Card: As a user, I want the most recent education card to have a dark green background (#2E6E5B), white text (#FFFFFF), and a "most recent" badge in red (#D9534F, 12px font, 8px border-radius) so that it stands out clearly.
-Typography & Spacing: As a user, I want the Institution Name to be in bold, 18px Inter font (#000 for standard cards, #FFF for the highlighted card) with a 12px margin below, and the Degree and Dates sections to use 14px regular-weight Inter font (#4A4A4A) with 20px line height for readability.
-Grid Layout (Desktop): As a user, I want the education cards to be stacked vertically with 16px spacing and aligned centered within a container of 60% width so that the section remains well-structured.
-Mobile Responsive Stacking: As a user, I want the education cards to expand to 100% width on screens below 640px, with 12px spacing between them, and the text size to be reduced to 16px for headings and 12px for descriptions to ensure readability on smaller screens.
-Bullet Points Formatting: As a user, I want the bullet points inside each education card to use 12px font, 18px line height, and left-aligned spacing of 8px from the edge so that they remain well-structured and readable.
-
-Headers: As a user, I want each category (e.g., “Design,” “Software,” and “Languages”) to be prominently labeled so that I can quickly scan and understand which tools belong to each group.
-Icons: As a user, I want the tool icons displayed in a uniform size and style so that the section appears visually cohesive and professional.
-Mobile Responsiveness: As a user, I want the Tools section to adapt to different screen sizes (e.g., stacking vertically on mobile, side-by-side on desktop) so that it remains visually appealing and easy to navigate on any device.
-Accessibility : As a user, I want accessible labels or alt text for each icon so that screen readers can clearly convey the information and I can identify the tools even if images fail to load.
-Typography: As a user, I want category labels (the black tabs) to have a distinct background and text style so that they stand out against the card’s background and are immediately recognizable.
-Mobile Responsive Stacking: As a user, I want the Tools section to automatically shift from a multi-column layout on desktop to a single-column layout on mobile so that I can easily view each category and icon without excessive scrolling or layout issues.
-
-Layout: As a user, I want each element’s width, height, and spacing to precisely match the design specs so that the layout appears clean, professional, and consistent across the site.
-Spacing: Margins and Padding: As a user, I want margins, paddings, and line-heights to follow the exact spacing guidelines so that the interface has a visually pleasing and balanced appearance.
-Typography and Headers: As a user, I want consistent font sizes and weights across headings and paragraphs so that the typography feels coherent and matches the predefined style guide.
-Colour Theme: As a user, I want color palettes and hover states to exactly match the provided design values so that I can trust the interface to behave consistently and remain brand-aligned.
-Images and Icons: As a user, I want all images, icons, and buttons to be aligned pixel-perfectly within their containers so that nothing looks out of place or visually jarring.
-Mobile Responsiveness: As a user, I want responsive breakpoints to be set according to the mockups so that on smaller screens the design still looks “pixel perfect” and elements reflow gracefully.
-User Friendly Components: As a user, I want the code (HTML, CSS, JS) structured in a modular way so that making changes in one component doesn’t break pixel-accurate layout in other parts of the site.
-Pixel Perfect Sizing: As a user, I want each section to preserve the exact proportions (e.g., aspect ratios, spacing) found in the design so that the final build appears identical to the approved mockups.
-Typography Design: As a user, I want to see consistent spacing between text blocks, images, and interactive elements so that the site has a unified, polished look that is easy on the eyes.
-
-*/
