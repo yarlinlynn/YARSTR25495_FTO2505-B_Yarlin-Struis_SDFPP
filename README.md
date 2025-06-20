@@ -6,7 +6,12 @@ The resume highlights my expertise in front-end development, including proficien
 <br/>
 
 ## Demo Screenshot
-![Figma Design](<assets/images/Portfolio Piece Design.png>) ![Website](<assets/images/Website Demo Screenshot.PNG>)
+![Website](<assets/images/Website Demo Screenshot.PNG>)
+
+#### Presentation Recording: 
+https://www.loom.com/share/fb0ef37dce6f418ca2dc126e0ae615f2?sid=a7428aed-321b-4308-8a19-675002f104ad
+
+<br/>
 
 ## Features
 - **Responsive Design**: The website adapts seamlessly to different screen sizes, from mobile devices to desktops, using CSS media queries.
@@ -65,6 +70,9 @@ cd YARSTR25495_FTO2505-B_Yarlin-Struis_SDFPP
 - Accessibility Enhancements: Improve ARIA attributes and keyboard navigation for better accessibility.
 - Backend Integration: Connect the contact form to a backend service (e.g., Node.js, Firebase) for email notifications.
 - Performance Optimization: Minify CSS files and optimize images to reduce load times.
+
+##### Figma Dessign:
+![Figma Design](<assets/images/Portfolio Piece Design.png>)
 
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements or bug fixes, please follow these steps:
