@@ -230,7 +230,21 @@
         height: 847.06px;
     }
 
-    .tools-section .container { grid-template-columns: 183.93px; } 
+    .tools-section .container { 
+        grid-template-columns: 183.93px; 
+        grid-template-areas:
+        "language"
+        "design"
+        "tools";
+    } 
+
+    .card-container.Design { grid-area: design; }
+
+
+    .card-container.Software { grid-area: tools; }
+
+
+    .card-container.Languages { grid-area: language; }
 
     .experience-section .card.active-card .card-info ul {
         position: relative;
