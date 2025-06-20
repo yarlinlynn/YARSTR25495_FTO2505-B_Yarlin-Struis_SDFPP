@@ -1,13 +1,12 @@
-# Personal Portfolio Website
-## Overview
-This repository contains the source code for my personal portfolio website, designed to showcase my skills, projects, and professional background as a web developer. The website is built using HTML and CSS, with a focus on clean design, and responsive layouts to ensure compatibility across various devices and screen sizes.
+# Personal Resume Website
+This repository contains the source code for my personal resume website, designed to showcase my skills, projects, and professional background as a web developer. The website is built using HTML and CSS, with a focus on clean design, and responsive layouts to ensure compatibility across various devices and screen sizes.
 
-The portfolio highlights my expertise in front-end development, including proficiency in creating visually appealing interfaces and implementing responsive design principles. It serves as a central hub for potential employers, clients, or collaborators to explore my work and get in touch.
+The resume highlights my expertise in front-end development, including proficiency in creating visually appealing interfaces and implementing responsive design principles. It serves as a central hub for potential employers, clients, or collaborators to explore my work and get in touch.
 
 <br/>
 
 ## Demo Screenshot
-
+![Figma Design](<assets/images/Portfolio Piece Design.png>) ![Website](<assets/images/Website Demo Screenshot.PNG>)
 
 ## Features
 - **Responsive Design**: The website adapts seamlessly to different screen sizes, from mobile devices to desktops, using CSS media queries.
