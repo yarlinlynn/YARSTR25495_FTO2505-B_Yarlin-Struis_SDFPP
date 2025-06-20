@@ -257,6 +257,7 @@
 
     .projects-section > .container {
         grid-template-columns: repeat(4, 272px);
+        gap: 49px;
     }
 
     .education-section {
